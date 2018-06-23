@@ -6,6 +6,7 @@ import About from './components/About';
 import Courses from './components/Courses';
 import Teachers from './components/Teachers';
 import NotFound from './components/NotFound';
+import Featured from './components/Featured';
 import './App.css';
 
 class App extends Component {
@@ -20,6 +21,7 @@ class App extends Component {
               <Route path="/about" component={About}/>
               <Route path="/courses" component={Courses}/>
               <Route path="/teachers" component={Teachers}/>
+              <Route path="/teachers/:topic/:fname-:lname" component={Featured} />
               <Route component={NotFound}/>
             </Switch>
           </div>
